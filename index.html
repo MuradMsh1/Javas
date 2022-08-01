@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        class class1 {
+            constructor(num) {
+                this.Num = num
+            }
+
+            plus(num1) {
+                return new class1(num1 + this.Num);
+            }
+
+
+
+
+
+            minus(num2) {
+                return new class1(this.Num - num2);
+            }
+
+
+
+
+            multiply(num3) {
+                return new class1(this.Num * num3);
+            }
+
+
+
+
+
+            divide(num4) {
+                return this.Num / num4;
+            }
+
+        }
+
+        let aa = new class1(40)
+
+
+        var result = aa.plus(4).minus(20).multiply(2).divide(1)
+
+        console.log(result);
+
+
+    </script>
+
+
+
+</body>
+
+</html>
